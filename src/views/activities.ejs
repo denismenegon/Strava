@@ -1,0 +1,70 @@
+<!-- src/views/activities.ejs -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Underfined</title>
+    <link rel="stylesheet" href="/css/estilo.css"> 
+</head>
+
+<%- include('partials/autenticar') %>
+
+<body>
+    <!-- Container -->
+    <div class="container">
+        
+        <%- include('partials/header') %>
+
+        <!-- Conteúdo principal -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <h2>Sidebar</h2>
+                <p>Conteúdo da sidebar.</p>
+
+
+                <!-- Exemplo de Formulário de Filtro -->
+                <form method="GET" action="/activities">
+                    <label for="startDate">Data Início:</label>
+                    <input type="date" id="startDate" name="startDate">
+                  
+                    <label for="endDate">Data Fim:</label>
+                    <input type="date" id="endDate" name="endDate">
+                    
+                    <label for="activityTypeFilter">Tipo de Atividade:</label>
+                    <select id="activityTypeFilter" name="activityTypeFilter">
+                    <option value="">Selecione</option>
+                    <option value="Walk">Caminhada</option>
+                    <option value="Run">Corrida</option>
+                    <option value="Bike">Ciclismo</option>
+                    <option value="Swim">Natação</option>
+                    <!-- Adicione outros tipos de atividades, conforme necessário -->
+                    </select>
+                    
+                    <button type="submit">Filtrar</button>
+                </form>
+
+
+            </div>
+
+            <!-- Conteúdo -->
+            <div class="content">
+                <table border="1" id="myTable">
+                    <%- body %>
+                </table>
+
+                <%- include('partials/popup') %>
+            </div>
+        </div>
+
+        <%- include('partials/footer') %>
+    </div>
+
+    <script src="/js/popup.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,8 @@
+<% if (athleteName) { %>
+    <!-- <h3>Olá, <%= athleteName %></h3> -->
+<% } %> 
+
+<% if (!authenticated) { %>
+    <p align = "center">Você não está autenticado. Clique abaixo para autenticar com Strava:</p>
+    <button style = "background-color: #e04300;" onclick="window.location.href='/auth'">Autenticar com Strava</button>
+<% } %> 
