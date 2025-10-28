@@ -143,6 +143,6 @@ Este projeto foi desenvolvido por:
 
 Denis Menegon
 
-[https://www.linkedin.com/in/denis-menegon/]
+https://www.linkedin.com/in/denis-menegon/
 
-[Seu Link do GitHub](https://github.com/denismenegon)]
+https://github.com/denismenegon
