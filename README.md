@@ -58,6 +58,8 @@ dotenv
 
 Para gerenciar credenciais e configurações sensíveis.
 
+![Exemplo](tela_01.png)
+
 🚀 Como Configurar e Executar
 
 Siga estas etapas para ter o projeto rodando localmente.
